@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+/*Route::get('/', function () {
+    return view('welcome',array(name=>'ssss'));
+
+});*/
+Route::get('/', function ()    {
+    return view('index', ['name' => 'Jamesgggg']);
+});
+Route::get('/user', function () {
+    die('yes');
 });
